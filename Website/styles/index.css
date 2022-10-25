@@ -1,0 +1,160 @@
+.black-line{
+    background-color:#222222;
+    height:5px;
+    width:100vw;
+}
+
+.slider-container img{
+    width: 100vw;
+    height: auto;
+    display: inline-block
+}
+.slider-container{
+    display: flex;
+    position: relative;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+}
+.slider-placeholder{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+.slider-content{
+    display: flex;
+    position: relative;
+}
+
+#prev-btn{
+    display: flex;
+    justify-content: flex-start;
+    z-index: 2;
+    left: 1vw;
+    position:absolute;
+    width: 50px;
+}
+
+#next-btn{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    right: 1vw;
+    position:absolute;
+    width: 50px;
+}
+
+.shoes{
+    display: flex;
+    width:100vw;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+.shoes img{
+    width: 20vw;
+    height:auto;
+}
+
+.shoes-item{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 18px;
+    width: 20vw;
+    height: auto;
+    margin:-0.3px;
+    background-color: white;
+    border:none;
+}
+.price{
+    font-weight: bold;
+}
+.shoes-item a{
+    display:block;
+    background: linear-gradient(to left, white 50%, #222 50%) right;
+    background-size: 200%;
+    transition: .42s ease-in-out;
+}
+
+.shoes-item a:hover{
+    color:#eee;
+    background-position: left;
+}
+
+.na-title{
+    width: 100vw;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.bs-title{
+    width: 100vw;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.news-title{
+    width: 100vw;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.news-item{
+    display: flex;
+    position: relative;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    
+}
+.news-item1 img{
+    width: 50vw;
+    display: inline-block;
+}
+.news-item2 img{
+    width: 50vw;
+    display: inline-block;
+}
+.news-item img:hover{
+    filter:sepia();
+    transition:1.2s ease-out;
+}
+
+@media only screen and (max-width: 1080px){
+    .shoes{
+        flex-direction: column;
+    }
+    .shoes-item{
+        font-size: 16px;
+        width: 50vw;
+    }
+    .shoes img{
+        width: 50vw;
+    }
+    .news-item{
+        flex-direction: column;
+    }
+    .news-item img{
+        width: 100vw;
+    }
+}
